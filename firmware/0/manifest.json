@@ -1,0 +1,16 @@
+{
+ "name": "Print server (mọi máy in)",
+ "version": "v16-vitinhanphu-20261126",
+ "new_install_prompt_erase": true,
+ "builds": [
+  {
+   "chipFamily": "ESP32-S3",
+   "parts": [
+    {
+     "path": "firmware.bin",
+     "offset": 0
+    }
+   ]
+  }
+ ]
+}

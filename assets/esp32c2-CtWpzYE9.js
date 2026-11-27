@@ -1,0 +1,1 @@
+export{s as ESP32C2ROM}from"./install-dialog-BYHOJxry.js";
