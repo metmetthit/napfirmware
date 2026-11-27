@@ -1,6 +1,6 @@
 {
  "name": "Print server (mọi máy in)",
- "version": "v17-vitinhanphu-20261127",
+ "version": "v21-vitinhanphu-20261127",
  "new_install_prompt_erase": false,
  "builds": [
   {
