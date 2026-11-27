@@ -5,8 +5,8 @@
 <meta name="theme-color" content="#080f1d">
 <title>Nạp firmware · Vi Tính An Phú</title>
 <meta name="description" content="Nạp firmware máy in Wi-Fi Vi Tính An Phú vào ESP32-S3 ngay trên trình duyệt.">
-  <script type="module" crossorigin src="./assets/index-BPdyd-Bm.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DRu8GZUa.css">
+  <script type="module" crossorigin src="./assets/index-C4SW8azZ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Bt61mngs.css">
 </head>
 <body>
 <div class="shell">
@@ -39,6 +39,12 @@
           <span class="chip" id="latest" hidden>Mới nhất</span>
         </div>
         <div class="note" id="notes" hidden></div>
+        <div class="modes" role="radiogroup" aria-label="Cách nạp">
+          <label class="opt"><input type="radio" name="mode" value="keep" checked>
+            <span><b>Cập nhật, giữ cài đặt</b><small>Giữ Wi-Fi, IP, máy in và mọi cài đặt cũ. Chỉ thay firmware.</small></span></label>
+          <label class="opt"><input type="radio" name="mode" value="new">
+            <span><b>Cài mới, xóa sạch</b><small>Xóa toàn bộ cài đặt cũ. Dùng cho mạch mới, mạch đang chạy chương trình khác hoặc khi bị lỗi.</small></span></label>
+        </div>
         <esp-web-install-button id="installer">
           <button slot="activate" class="btn primary">Kết nối USB &amp; nạp firmware →</button>
           <div slot="unsupported" class="note warn">Trình duyệt này chưa nạp được. Hãy mở trang bằng <b>Chrome</b> hoặc <b>Edge</b> trên máy tính.</div>
@@ -54,7 +60,7 @@
     <details open><summary>Không thấy cổng COM</summary><p>Thử cáp USB khác (loại truyền dữ liệu, không phải cáp chỉ sạc). Một số mạch cần driver CH340 hoặc CP210x của nhà sản xuất.</p></details>
     <details><summary>Kẹt ở "Connecting…"</summary><p>Đóng các phần mềm đang mở cổng COM. Giữ nút BOOT, bấm rồi thả RST, sau đó thả BOOT và bấm nạp lại.</p></details>
     <details><summary>Đang mở bằng điện thoại, Zalo, Facebook?</summary><p>Nạp firmware cần Chrome hoặc Edge trên máy tính. Sao chép đường dẫn trang này và mở trên máy tính.</p></details>
-    <details><summary>Nạp lại có mất Wi-Fi không?</summary><p>Hộp thoại nạp cho chọn có xóa dữ liệu hay không. Không xóa thì Wi-Fi và IP đã cài vẫn giữ nguyên.</p></details>
+    <details><summary>Nạp lại có mất Wi-Fi không?</summary><p>Chọn <b>Cập nhật, giữ cài đặt</b> thì Wi-Fi, IP và máy in đã cài vẫn giữ nguyên. Chọn <b>Cài mới, xóa sạch</b> thì phải cài Wi-Fi lại từ đầu.</p></details>
   </section>
 
   <footer><span>© 2026 Vi Tính An Phú</span><a id="lic" href="/licenses">Giấy phép mã nguồn mở (GPL-3.0) · Mã nguồn</a></footer>

@@ -1,7 +1,7 @@
 {
  "name": "Print server (mọi máy in)",
  "version": "v17-vitinhanphu-20261127",
- "new_install_prompt_erase": true,
+ "new_install_prompt_erase": false,
  "builds": [
   {
    "chipFamily": "ESP32-S3",
@@ -12,5 +12,6 @@
     }
    ]
   }
- ]
+ ],
+ "new_install_erase": true
 }

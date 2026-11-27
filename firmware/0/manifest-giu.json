@@ -1,0 +1,25 @@
+{
+ "name": "Print server (mọi máy in)",
+ "version": "v17-vitinhanphu-20261127",
+ "new_install_prompt_erase": false,
+ "builds": [
+  {
+   "chipFamily": "ESP32-S3",
+   "parts": [
+    {
+     "path": "giu0.bin",
+     "offset": 0
+    },
+    {
+     "path": "giu1.bin",
+     "offset": 61440
+    },
+    {
+     "path": "giu2.bin",
+     "offset": 73728
+    }
+   ]
+  }
+ ],
+ "new_install_erase": false
+}
